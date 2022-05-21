@@ -2,6 +2,7 @@
 using System.Timers;
 using System.Windows;
 using Kindergarten.Models;
+using Kindergarten.Views.Pages;
 
 namespace Kindergarten.Views.Windows
 {
@@ -36,7 +37,7 @@ namespace Kindergarten.Views.Windows
             BtnBack.Visibility = PageManager.CanGoBack() ? Visibility.Visible : Visibility.Hidden;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BtnBack_OnClick(object sender, RoutedEventArgs e)
         {
             PageManager.GoBack();
         }
